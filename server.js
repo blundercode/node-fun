@@ -6,6 +6,9 @@ var bodyParser = require('body-parser');
 var cors = require('cors')
 var request = require('request');
 var twilio = require('twilio')
+var fireBase = require('firebase')
+
+var ref = new fireBase('text-support-erik.firebaseIO.com')
 
 // Twilio Credentials 
 var accountSid = 'ACbb42949d459afbf800d030fafc3564fc';
@@ -33,6 +36,7 @@ app.use(cors());
 var message = {
 	"message": "hello fucker"
 }
+app.use(express.static(__dirname + '/public'));
 //#####################################################
 //endPoints:
 //#####################################################

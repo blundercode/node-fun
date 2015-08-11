@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Text Support</title>
+		<link rel="stylesheet" href="/styles/styles.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- Static -->
+			<div class="menu">
+				<h1>
+					<a href="/#/">Text Support</a>
+					</li>
+				</h1>
+				<!--<li><a href="/#/skills">Skills</a></li>-->
+			</div>
+			<!-- Routing -->
+			<ng-view></ng-view>
+		</div>
+		<!-- Angular Core Library -->
+		<script src="https://code.angularjs.org/1.4.3/angular.js"></script>
+		<!-- Angular Routing Library -->
+		<script src="https://code.angularjs.org/1.4.3/angular-route.js"></script>
+		<!-- Firebase -->
+		<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+		<!-- AngularFire -->
+		<script src="https://cdn.firebase.com/libs/angularfire/1.1.2/angularfire.min.js"></script>
+		<!-- Angular Modul -->
+		<script src="/app.js"></script>
+		<!-- Angular Services -->
+		<script src="/services/dataService.js"></script>
+		<!-- Angular Controllers -->
+		<script src="/controllers/mainCtrl.js"></script>
+		<script src="/controllers/supportCtrl.js"></script>
+	</body>
+
+</html>
